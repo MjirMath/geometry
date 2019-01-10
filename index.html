@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="/docs/js/jquery.js" defer></script>
 	<script type="text/javascript" src="/docs/js/main.js" defer></script>
 	<style>
+		/* This needs to be in javascript, ::after pseudo element can't access attributes */
 		.subtitle::after {content: attr(name);}
 	</style>
 </head>
@@ -18,6 +19,7 @@
 	<div class="banner" style="background-color:#16b0ff">
 		<div class="textbox" style="color:#fff;/*max-width:440px*/"><h1>GEOMETRY</h1></div>
 	</div>
+	/*
 	<div class="container">
 		<div class="card">
 			<img>
@@ -28,6 +30,7 @@
 			</div>
 		</div>
 	</div>
+	*/
 	<div id="footer"></div>
 </body>
 </html>
